@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Stuff in head only after this -->
-    <div class="navbar-fixed">
-  <nav>
-    <div id="logo-container" class="nav-wrapper red darken-1">
-      <a href="#!" class="brand-logo center">Odyssey 2016</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-</div>
-  </head>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Odyssey Website</title>
 
-  <body>
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!-- Body here -->
-  </body>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/flipclock.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="js/flipclock.js"></script>
+</head>
+<script type="text/javascript">
+  var clock;
+
+  $(document).ready(function() {
+
+    // Grab the current date
+    var currentDate = new Date();
+
+    // Set some date in the future. In this case, it's always Jan 1
+    var futureDate  = new Date(2016, 6, 15, 9, 0, 0);
+
+    // Calculate the difference in seconds between the future and current date
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+    // Instantiate a coutdown FlipClock
+    clock = $('.clock').FlipClock(diff, {
+      clockFace: 'DailyCounter',
+      countdown: true
+    });
+  });
+</script>
+<body style="background: url('images/bg1.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;">
+
+  <div id="index-banner" class="parallax-container">
+    <nav class="transparent" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" style="color: #fafafa" href="#" class="brand-logo">Odyssey 2016</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a style="color: #fafafa"  href="#">Events</a></li>
+          <li><a style="color: #fafafa"  href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center text-lighten-2" style="color: #448aff;">NPS HSR Presents: Odyssey</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Odyssey 2016 is going to be the best fest you're ever gonna attend</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light  blue accent-2">Know more</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+      <div class="clock" style="margin-top: 50px; width: 650px; display: block;margin-left: auto; margin-right: auto;"></div>
+  </div>
+</body>
 </html>
