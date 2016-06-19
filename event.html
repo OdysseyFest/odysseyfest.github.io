@@ -1,91 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Odyssey Events</title>
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <link href="css/animsition.min.css" rel="stylesheet">
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <!-- Add fancyBox -->
-  <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
-  <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-
-</head>
-<body style="background: url('images/#.jpg') no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;">
-<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="1500">
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-        <img id="logo-container" src="images/Odyssey_text.png" onclick="location.href='index.html'"style="cursor:pointer; margin-left: 10px; width: 125px; height: 50px; margin-top: 10px;" class="brand-logo"></img>
-      <ul class="right hide-on-med-and-down">
-        <li><a style="color: #757575"  href="#">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center teal-text text-lighten-2">NullPtr Xception</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">The most intense coding event ever.</h5>
-        </div>
-        <div class="row center">
-          <a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
-        </div>
-        <br><br>
-      </div>
-    </div>
-    <div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-    <div style="margin-top: -25px; width: 650px; display: block;margin-left: auto; margin-right: auto;">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">code</i></h2>
-            <h5 class="center">Coding at its best</h5>
-
-            <p class="light">Here's your chance to prove your programming skills. Battle the best in the city for the top spot. Use all your knowledge to come up with the best looking software.</p>
-          </div>
-        </div>
-	</div>
-</div>
-<script src="js/animsition.min.js" charset="utf-8"></script>
-<script>
-$(document).ready(function() {
-  $('.animsition').animsition();
-});
-</script>
-<script type="text/javascript">
-$(".fancybox")
-  .fancybox({
-      padding : 0
-  });
-  $(".fancybox-effects-d").fancybox({
-    padding: 0,
-
-    openEffect : 'elastic',
-    openSpeed  : 150,
-
-    closeEffect : 'elastic',
-    closeSpeed  : 150,
-
-    closeClick : true,
-
-    helpers : {
-      overlay : null
-    }
-  });
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-
-</script>
- </body>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+		<title>Odyssey Events</title>
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<link href="css/animsition.min.css" rel="stylesheet">
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<!-- Add fancyBox -->
+		<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+		<link rel="styleshhet" href="css/mobile.css">
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+		
+	</head>
+	<body style="background: url('images/#.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;">
+		<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="1500">
+			<nav class="white" role="navigation">
+				<div class="nav-wrapper container">
+					<img id="logo-container" src="images/Odyssey_text.png" onclick="location.href='index.html'"style="cursor:pointer; margin-left: 10px; width: 125px; height: 50px; margin-top: 10px;" class="brand-logo"></img>
+					<ul class="right hide-on-med-and-down">
+						<li><a style="color: #757575"  href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!--Begin event 1-->
+			<div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2">NullPtr Xception<!--<img src="logos/NullPtrXception.jpg"/>--></h1>
+						<div class="row center">
+							<h5 class="header col s12 light">The most intense coding event ever.</h5>
+						</div>
+						<div class="row center">
+							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
+			</div>
+			<div style="margin-top: 0px; margin-bottom:45px; width: 650px; display: block;margin-left: auto; margin-right: auto;">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">code</i></h2>
+						<h5 class="center">Coding at its best</h5>
+						
+						<p class="light">Here's your chance to prove your programming skills. Battle the best in the city for the top spot. Use all your knowledge to come up with the best looking software.</p>
+					</div>
+				</div>
+			</div>
+			<!--End event 1-->
+			<!--Begin event 2-->
+			<div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2"><img src="logos/MindZoeked.png"/></h1>
+						<div class="row center">
+							<h5 class="header col s12 light">Not a Saturday evening pastime.</h5>
+						</div>
+						<div class="row center">
+							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
+			</div>
+			<div style="margin-top: 0px; margin-bottom:45px; width: 650px; display: block;margin-left: auto; margin-right:auto;">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">code</i></h2>
+						<h5 class="center">A battle for glory</h5>
+						
+						<p class="light">For thousands of years, treasure hunters sailed the seven seas, battled horrific monsters, searched dangerous mountains, all in search of that elusive fortune. At NPS HSR, you have much more to gain than just a few jewels. Here, if you succeed, you get the greatest reward of them all. GLORY.
+						</p>
+						<p class="light">
+							We proudly present <em>MindZoeked</em>; a treasure hunt like never seen before. Be warned, this is no Saturday afternoon pastime. A potent combination of cunning, stamina and speed will be required to triumph. Take stock and be sure to be swift. May the odds be ever in your favour!
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--End event 2-->
+			<!--Begin event 3 -->
+			<div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2">Octave<!--<img src="logos/Octave.png"/>--></h1>
+						<div class="row center">
+							<h5 class="header col s12 light">Not a Saturday evening pastime.</h5>
+						</div>
+						<div class="row center">
+							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
+			</div>
+			<div style="margin-top: 0px; margin-bottom:45px; width: 650px; display: block;margin-left: auto; margin-right:auto;">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">code</i></h2>
+						<h5 class="center">Are you pitch perfect?</h5>
+						
+						<p class="light">Can you do it acapella? Then bring the six most versatile vocal cords of your school to battle it out, with a completely original mash up of English songs from any time, any genre.
+							
+						</p>
+						<p class="light">
+							Presenting, <em>Octave</em>; NPS HSR’s inaugural acapella event.  Don't come expecting a battle, for war is what it shall be. Only the adaptable will survive.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--End event 3-->
+			<!--Begin event 4 -->
+			<div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2">Drama<!--<img src="logos/Drama.png"/>--></h1>
+						<div class="row center">
+							<h5 class="header col s12 light">All the world's a stage.</h5>
+						</div>
+						<div class="row center">
+							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
+			</div>
+			<div style="margin-top: 0px; margin-bottom:45px; width: 650px; display: block;margin-left: auto; margin-right:auto;">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">code</i></h2>
+						<h5 class="center">Act 1 Scene 1</h5>
+						
+						<p class="light">Do you think you can be the next Tom Hanks? Maybe the next Angelina Jolie? Can you emote sorrow and elation and everything in between? Does stepping on stage make you shed all your inhibitions, and transform you completely? Are you capable of captivating every single member of the audience purely with your skills? Does humor flow in your veins instead of blood? Can your brain create ideas and breathe life into them in a span of seconds? 
+						</p>
+						<p class="light">
+						In short, were you <em>BORN TO ACT?</em>
+						</p>
+						<p class="light">
+						If the answer to that question was a resounding YES, then *____name of event__* is the event for you! Come join us at NPS HSR, and see if you can beat the best at their game.	
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--End event 4-->
+			<!--Begin event 5 -->
+			<div id="index-banner" class="parallax-container" style="background: url('images/nullptr.jpg');">
+				<div class="section no-pad-bot">
+					<div class="container">
+						<br><br>
+						<h1 class="header center teal-text text-lighten-2">Footloose<!--<img src="logos/Footloose.png"/>--></h1>
+						<div class="row center">
+							<h5 class="header col s12 light">Twist and shout.</h5>
+						</div>
+						<div class="row center">
+							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
+						</div>
+						<br><br>
+					</div>
+				</div>
+				<div class="parallax"><img src="images/nullptr.jpg" alt="Unsplashed background img 1"></div>
+			</div>
+			<div style="margin-top: 0px; margin-bottom:45px; width: 650px; display: block;margin-left: auto; margin-right:auto;">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center brown-text"><i class="material-icons">code</i></h2>
+						<h5 class="center">A stirring of a soul</h5>
+						
+						<p class="light">Dance is not just an art form. It is a form of expression, a powerful impulse. It can be a form of therapy, it can be an inborn talent. It transforms idea and emotions. It expresses the inexpressible, explains that which cannot be explained. Dance is freedom. Dance is life. 
+						</p>
+						<p class="light">
+						Come, show us how much dance means to you.
+						</p>
+						<p class="light">
+						NPS HSR invites you to take part in our dance event, <em>Footloose</em>. Come ready to fight, for what a fight it will be!
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--End event 5-->
+		</div>
+		<script src="js/animsition.min.js" charset="utf-8"></script>
+		<script>
+			$(document).ready(function() {
+				$('.animsition').animsition();
+			});
+		</script>
+		<script type="text/javascript">
+			$(".fancybox")
+			.fancybox({
+				padding : 0
+			});
+			$(".fancybox-effects-d").fancybox({
+				padding: 0,
+				
+				openEffect : 'elastic',
+				openSpeed  : 150,
+				
+				closeEffect : 'elastic',
+				closeSpeed  : 150,
+				
+				closeClick : true,
+				
+				helpers : {
+					overlay : null
+				}
+			});
+			$(document).ready(function() {
+				$(".fancybox").fancybox();
+			});
+		</script>
+	</body>
