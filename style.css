@@ -7,3 +7,8 @@
   .parallax-container .section {
     width: 100%;
   }
+  
+  #mob {
+	display: flex;
+	justify-content: center;
+}
