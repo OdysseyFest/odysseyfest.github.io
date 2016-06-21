@@ -9,34 +9,14 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link rel="stylesheet" href="css/flipclock.css">
   <link rel="stylesheet" href="css/animsition.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="js/flipclock.js"></script>
+    <script src="js/jquery.knob.js"></script>
+	<script src="js/jquery.ccountdown.js"></script>
+	<script src="js/init.js"></script>
   <script src="js/animsition.min.js"></script>
 </head>
-<script type="text/javascript">
-  var clock;
-
-  $(document).ready(function() {
-
-    // Grab the current date
-    var currentDate = new Date();
-
-    // Set some date in the future.
-    var futureDate  = new Date(2016, 6, 15, 9, 0, 0);
-
-    // Calculate the difference in seconds between the future and current date
-    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-    // Instantiate a coutdown FlipClock
-    clock = $('.clock').FlipClock(diff, {
-      clockFace: 'DailyCounter',
-      countdown: true
-    });
-  });
-</script>
 <script>
 $(document).ready(function() {
   $('.animsition').animsition();
@@ -47,7 +27,7 @@ $(document).ready(function() {
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;">
-<div class="animsitionz-depth-0" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="15200">
+<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="15200">
   <div id="index-banner" class="z-depth-0 parallax-container">
     <nav class="transparent z-depth-0" role="navigation">
       <div class="z-depth-0 nav-wrapper container">
@@ -58,27 +38,30 @@ $(document).ready(function() {
         </ul>
       </div>
     </nav>
-    <div class="section no-pad-bot">
+    <div class="section no-pad-bot" style="margin-bottom: 10%;>
       <div class="container">
         <br><br>
         <div class="row center">
-			<div id="mob" style="margin-bottom: 20px; margin-top: 20px;" >
-				<img src="images/logo+text.png" style="width: 30%; height: 30%;"></img>
+			<div id="mob" style="margin-bottom: 20px; margin-top: 10px;" >
+				<img src="images/logo+text.png" style="width: 25%; height: 25%;"></img>
 			</div>
-			<div id="mob" style="margin-bottom: 20px; margin-top: 20px;" >
-				<h5 class="header col s12 light">Odyssey 2016 is going to be the best fest you're ever gonna attend</h5>
+			<div id="mob" style="margin-bottom: 20px; margin-top: 20px;"  >
+				<h5 class="header col s12 light" >Odyssey 2016 is going to be the best fest you're ever gonna attend</h5>
 			</div>
-			<div id="mob" style="margin-bottom: 20px; margin-top: 20px;" >
-				<div class="clock" style="margin-top: 10px; width: 50%; display: block; margin-left: auto; margin-right: auto;"></div>
+			<div class="cccounter" style="margin-top: 20px;" >
+				<input class="knob days" data-readOnly="true" data-width="125" data-displayPrevious=true data-fgColor="#e3f2fd" data-skin="tron" data-thickness=".2" data-min="0" data-max="365" value="75">
+				<input class="knob hour" data-readOnly="true" data-width="125" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#e3f2fd" data-skin="tron" data-thickness=".2" value="75">
+				<input class="knob minute" data-readOnly="true" data-width="125" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e3f2fd" data-skin="tron" data-thickness=".2" value="75">
+				<input class="knob second" data-readOnly="true" data-width="125" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#e3f2fd" data-skin="tron" data-thickness=".2" value="75">
 			</div>
-        </div>
-        <div class="row center">
-          <a href="event.html" id="download-button" class="btn-large waves-effect waves-light z-depth-0 blue accent-2">Know more</a>
+			<a href="event.html" id="download-button" style="margin-top: -3%;" class="btn-large waves-effect waves-light z-depth-4 blue accent-2">Know more</a>
         </div>
         <br><br>
       </div>
     </div>
-
+<script>
+    $(".cccounter").ccountdown(2016,7,15,'09:00'); //only need to pass target date and time
+</script>
   </div>
 </div>
 </body>

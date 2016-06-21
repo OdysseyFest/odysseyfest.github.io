@@ -8,7 +8,13 @@
     width: 100%;
   }
   
-  #mob {
+#mob {
 	display: flex;
 	justify-content: center;
 }
+
+#bg {
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
