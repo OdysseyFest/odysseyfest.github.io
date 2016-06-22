@@ -22,15 +22,32 @@
 	-o-background-size: cover;
 	background-size: cover;">
 		<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="1500">
-			<nav class="white" role="navigation">
-				<div class="nav-wrapper container";>
-					<img id="logo-container" src="images/Odyssey_text.png" onclick="location.href='../index.html'" style="cursor:pointer; width: 125px; height: 70px; padding-top: 10px; padding-bottom: 20px;" class="brand-logo"></img>
-					<ul class="right hide-on-med-and-down">
+			  <nav class="white">
+				<div class="nav-wrapper container">
+				  <a href="../index.html" class="brand-logo"><img id="logo-container" src="../images/Odyssey_text.png" style="cursor:pointer; width: 125px; height: 70px; padding-top: 10px; padding-bottom: 20px;" class="brand-logo"></img></a>
+				  <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons red-text darken-4">menu</i></a>
+				  <ul class="right hide-on-med-and-down">
 						<li><a class='dropdown-button' href='#' data-activates='dropdown' style="color: #757575">Navigate Events<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a style="color: #757575" href="../info/index.html">General Info</a></li>
-					</ul>
+				  </ul>
+				  <ul class="side-nav" id="mobile">
+				    <li style="color: #ef5350; margin-left: 10%;" class="collection-header"><h5><b>Odyssey 2016</b></h5></li>
+					<li><a style="color: #ef5350" href="../info/index.html">General Info</a></li>
+					<li style="color: #ef5350; margin-left: 10%;" class="collection-header"><h5><b>Events</b></h5></li>
+					<li><a style="color: #ef5350" href="#aera">Aera</a></li>
+					<li><a style="color: #ef5350" href="#bob">Battle of the Bands</a></li>
+					<li><a style="color: #ef5350" href="#charisma">Charisma</a></li>
+					<li><a style="color: #ef5350" href="#footloose">Footloose</a></li>
+					<li><a style="color: #ef5350" href="#graf">Graffixed</a></li>
+					<li><a style="color: #ef5350" href="#treasure">MindZoeked</a></li>
+					<li><a style="color: #ef5350" href="#neos">Neos</a></li>
+					<li><a style="color: #ef5350" href="#nullptr">NullPtr Xception</a></li>
+					<li><a style="color: #ef5350" href="#octave">Octave</a></li>
+					<li><a style="color: #ef5350" href="#quiddity">Quiddity</a></li>
+					<li><a style="color: #ef5350" href="#acts">The Act's Effect</a></li>
+				  </ul>
 				</div>
-			</nav>
+			  </nav>
 			  <!-- Dropdown Structure -->
 			  <ul id='dropdown' class='dropdown-content'>
 				<li><a style="color: #ef5350" href="#aera">Aera</a></li>
@@ -50,7 +67,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/aera.png" style="width: 50%; height: 50%;"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/aera.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/aera.png" style="width: 90%; height: 90%; margin-bottom: 20%"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1Be8MsPYaZaPFxc0T6LGvstGsam8RvkGljSWBX8l5zms/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light amber">Register Now!</a>
 						</div>
@@ -72,7 +89,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center blue-text text-lighten-2"><img src="logo/bob.png" style="width: 30%; height: 30%;"></h1>
+						<h1 id="mob" class="header center blue-text text-lighten-2"><img class="hide-on-small-only" src="logo/bob.png" style="width: 30%; height: 30%;"><img class="hide-on-med-and-up" src="logo/bob.png" style="width: 70%; height: 70%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1z6tFAOGNQdCvsW331KBBYS7REJsG9rJ_qu8Bkj0hugI/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light indigo">Register Now!</a>
 						</div>
@@ -94,7 +111,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/Charisma.png" style="width: 50%; height: 50%;"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/Charisma.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/Charisma.png" style="width: 90%; height: 90%;  margin-bottom: 10%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1yfz4H_vyTOQ8OdZsej0BZyX4p1xu1NuQnmXiE2e-i68/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light deep-purple accent-1">Register Now!</a>
 						</div>
@@ -114,7 +131,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center cyan-text text-lighten-2"><img src="logo/footkoose.png" style="width: 50%; height: 50%;"></h1>
+						<h1 id="mob" class="header center cyan-text text-lighten-2"><img class="hide-on-small-only" src="logo/footkoose.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/footkoose.png" style="width: 120%; height: 120%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/16Zk2Rw7iI-AZsEMFS8jstxw6yqzhFWhAYCscpvoKtFc/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light indigo darken-4">Register Now!</a>
 						</div>
@@ -137,7 +154,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/graffixed.png" style="width: 50%; height: 50%;"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/graffixed.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/graffixed.png" style="width: 120%; height: 120%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1bO3VzOUH2Tiv9bPOWOELIetE1NS66TENr9M0X_D3UFw/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
 						</div>
@@ -159,9 +176,9 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/Mindzoeked.png" style="width: 50%; height: 50%;"></img></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/Mindzoeked.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/Mindzoeked.png" style="width: 120%; height: 140%;  margin-bottom: 20%"></h1>
 						<div class="row center" id="mob">
-							<a href="https://docs.google.com/forms/d/1V_5pjQA9Cxi_MwIN-xoqp_Hpx5RZzgAtwtctJAAsloY/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light orange darken-4">Register Now!</a>
+							<a href="https://docs.google.com/forms/d/1V_5pjQA9Cxi_MwIN-xoqp_Hpx5RZzgAtwtctJAAsloY/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light yellow darken-2">Register Now!</a>
 						</div>
 					</div>
 				</div>
@@ -181,7 +198,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/neos_logo.png" style="width: 25%; height: 25%;"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/neos_logo.png" style="width: 25%; height: 25%;"><img class="hide-on-med-and-up" src="logo/neos_logo.png" style="width: 70%; height: 70%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1o8hQ0jA_Zrxgh7ly0Fj-oYxM12mKenpWVj_-ttvMKv4/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light amber darken-1">Register Now!</a>
 						</div>
@@ -205,7 +222,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/nullptr.png" style="width: 50%; height: 50%; margin-top: 2%"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/nullptr.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/nullptr.png" style="width: 120%; height: 120%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1q2n09sWggCwEADb9ZJHB7FJrvdEcXvTXvX6M-b9-FFs/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light teal lighten-1">Register Now!</a>
 						</div>
@@ -225,7 +242,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center yellow-text text-lighten-2"><img src="logo/octave.png" style="width: 50%; height: 50%; margin-top: 2%"></h1>
+						<h1 id="mob" class="header center yellow-text text-lighten-2"><img class="hide-on-small-only" src="logo/octave.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/octave.png" style="width: 120%; height: 120%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1ptRkDFS5KjTuBNugaa4uJIyMNt6EZfMxhviNMoDz2DE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light yellow darken-4">Register Now!</a>
 						</div>
@@ -247,7 +264,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/Quiddity.png" style="width: 50%; height: 50%;"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/Quiddity.png" style="width: 50%; height: 50%;"><img class="hide-on-med-and-up" src="logo/Quiddity.png" style="width: 120%; height: 120%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/14HfHcUXoU3ocaJNAc2h9ovkOYXeXLCr29I-krAOIa9c/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light red darken-3">Register Now!</a>
 						</div>
@@ -267,7 +284,7 @@
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
-						<h1 id="mob" class="header center teal-text text-lighten-2"><img src="logo/The_axe_effect.png" style="width: 70%; height: 70%; margin-bottom: 8%; margin-top: 2%"></h1>
+						<h1 id="mob" class="header center teal-text text-lighten-2"><img class="hide-on-small-only" src="logo/The_axe_effect.png" style="width: 50%; height: 50%; margin-top: 5%; margin-bottom: 5%;"><img class="hide-on-med-and-up" src="logo/The_axe_effect.png" style="width: 100%; height: 100%; margin-top: 20%; margin-bottom: 10%;"></h1>
 						<div class="row center" id="mob">
 							<a href="https://docs.google.com/forms/d/1Ir4mIXISNN2yuFAwEf7MAXR5uXKB_rNRBdDMYFO6NDE/viewform?embedded=true" id="download-button" class="fancybox-effects-d fancybox fancybox.iframe btn-large waves-effect waves-light red darken-1">Register Now!</a>
 						</div>
@@ -290,7 +307,7 @@
           <div class="footer-copyright">
             <div class="container">
             © 2016 National Public School HSR Layout
-            <a class="grey-text text-lighten-4 right" href="https://www.google.com/+NikhilPE/about">Website designed and developed by Nikhil P E</a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/drakonizer">Website designed and developed by Nikhil P E</a>
             </div>
           </div>
         </footer>
@@ -303,6 +320,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$(".fancybox").fancybox();
+				$(".button-collapse").sideNav();
 			});
 		</script>
 	</body>
