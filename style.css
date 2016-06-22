@@ -18,3 +18,23 @@
     background-size: cover;
 }
 
+#days-sub {
+    position:relative;
+    left:80px;
+}
+
+#hours-sub {
+    position:relative;
+    left:250px;
+
+}
+
+#mins-sub {
+    position:relative;
+    left:405px;
+}
+
+#secs-sub {
+    position:relative;
+    left:555px;
+}

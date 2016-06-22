@@ -41,7 +41,22 @@ $(function() {
                             this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
                             this.g.stroke();
                         }
-
+						if($(this.i).attr('id')=="day")
+						{
+							$(this.i).val(this.cv + 'D');
+						}
+						else if($(this.i).attr('id')=="hr")
+						{
+							$(this.i).val(this.cv + 'H');
+						}
+						else if($(this.i).attr('id')=="min")
+						{
+							$(this.i).val(this.cv + 'M');
+						}
+						else if($(this.i).attr('id')=="sec")
+						{
+							$(this.i).val(this.cv + 'S');
+						}
                         this.g.beginPath();
                         this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
                         this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
@@ -57,7 +72,10 @@ $(function() {
                     }
                 }
             });
-
+			$(".days").knob({
+				format: function(v){ return v + 'D';
+				}
+			});
             // Example of infinite knob, iPod click wheel
             var v, up=0,down=0,i=0
                 ,$idir = $("div.idir")
