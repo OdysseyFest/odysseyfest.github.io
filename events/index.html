@@ -14,14 +14,13 @@
 		<!-- Add fancyBox -->
 		<link rel="stylesheet" href="../css/jquery.fancybox.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="../js/jquery.fancybox.pack.js"></script>
-
 	</head>
 	<body style="background: url('images/bg.png') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;">
-		<div class="animsition" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="1500">
+		<div class="animsition cont" data-animsition-in-class="fade-in" data-animsition-in-duration="3000" data-animsition-out-class="fade-out" data-animsition-out-duration="1500">
 			  <nav class="white">
 				<div class="nav-wrapper container">
 				  <a href="../index.html" class="brand-logo"><img id="logo-container" src="../images/Odyssey_text.png" style="cursor:pointer; width: 125px; height: 70px; padding-top: 10px; padding-bottom: 20px;" class="brand-logo"></img></a>
@@ -44,26 +43,26 @@
 					<li><a style="color: #ef5350" href="#nullptr">NullPtr Xception</a></li>
 					<li><a style="color: #ef5350" href="#octave">Octave</a></li>
 					<li><a style="color: #ef5350" href="#quiddity">Quiddity</a></li>
-					<li><a style="color: #ef5350" href="#acts">The Act's Effect</a></li>
+					<li><a style="color: #ef5350" onclick="zenscroll.intoView(acts)">The Act's Effect</a></li>
 				  </ul>
 				</div>
 			  </nav>
 			  <!-- Dropdown Structure -->
 			  <ul id='dropdown' class='dropdown-content'>
-				<li><a style="color: #ef5350" href="#aera">Aera</a></li>
-				<li><a style="color: #ef5350" href="#bob">Battle of the Bands</a></li>
-				<li><a style="color: #ef5350" href="#charisma">Charisma</a></li>
-				<li><a style="color: #ef5350" href="#footloose">Footloose</a></li>
-				<li><a style="color: #ef5350" href="#graf">Graffixed</a></li>
-				<li><a style="color: #ef5350" href="#treasure">MindZoeked</a></li>
-				<li><a style="color: #ef5350" href="#neos">Neos</a></li>
-				<li><a style="color: #ef5350" href="#nullptr">NullPtr Xception</a></li>
-				<li><a style="color: #ef5350" href="#octave">Octave</a></li>
-				<li><a style="color: #ef5350" href="#quiddity">Quiddity</a></li>
-				<li><a style="color: #ef5350" href="#acts">The Act's Effect</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('aera'));">Aera</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('bob'));">Battle of the Bands</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('charisma'));">Charisma</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('footloose'));">Footloose</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('graf'));">Graffixed</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('treasure'));">MindZoeked</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('neos'));">Neos</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('nullptr'));">NullPtr Xception</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('octave'));">Octave</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('quiddity'));">Quiddity</a></li>
+				<li><a style="color: #ef5350" onclick="zenscroll.to(document.getElementById('acts'));">The Act's Effect</a></li>
 			  </ul>
 						<!--Begin event 1-->
-			<div id="aera" class="parallax-container animsition" style="background: url('images/aera.jpg') no-repeat center center fixed; background-size: cover;" style="margin-top: 20px;">
+			<div id="aera" class="parallax-container" style="background: url('images/aera.jpg') no-repeat center center fixed; background-size: cover;" style="margin-top: 20px;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -74,7 +73,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">visibility</i></h2>
 					<h5 class="center">"People will stare. Make it worth their while." </h5>
@@ -85,7 +84,7 @@
 			</div>
 			<!--End event 1-->
 			<!--Begin event 2-->
-			<div id="bob" class="parallax-container" style="background: url('images/bob.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="bob" class="parallax-container reveal" style="background: url('images/bob.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -96,7 +95,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons small">album</i></h2>
 					<h5 class="center">“Music is not what I do. It’s who I am.”</h5>
@@ -107,7 +106,7 @@
 			</div>
 			<!--End event 2-->
 			<!--Begin event 3 -->
-			<div id="charisma" class="parallax-container" style="background: url('images/charisma.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="charisma" class="parallax-container reveal" style="background: url('images/charisma.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -118,7 +117,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">wc</i></h2>
 					<h5 class="center">Do you have what it takes to be Miss/Mr. Odyssey?</h5>
@@ -127,7 +126,7 @@
 			</div>
 			<!--End event 3-->
 			<!--Begin event 3 -->
-			<div id="footloose" class="parallax-container" style="background: url('images/dance.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="footloose" class="parallax-container reveal" style="background: url('images/dance.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -138,7 +137,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">blur_on</i></h2>
 					<h5 class="center">Dance is freedom. Dance is life.</h5>
@@ -150,7 +149,7 @@
 			</div>
 			<!--End event 3-->
 			<!--Begin event 4 -->
-			<div id="graf" class="parallax-container" style="background: url('images/graf.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="graf" class="parallax-container reveal" style="background: url('images/graf.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -161,7 +160,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">photo</i></h2>
 					<h5 class="center">“The world is but a canvas for our imagination.”</h5>
@@ -172,7 +171,7 @@
 			</div>
 			<!--End event 4-->
 			<!--Begin event 6 -->
-			<div id="treasure" class="parallax-container" style="background: url('images/treasure.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="treasure" class="parallax-container reveal" style="background: url('images/treasure.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -183,7 +182,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">directions</i></h2>
 					<h5 class="center">Thou wilt not findeth what thee doth not seek.</h5>
@@ -194,7 +193,7 @@
 			</div>
 			<!--End event 6-->
 			<!--Begin event 7 -->
-			<div id="neos" class="parallax-container" style="background: url('images/comm.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="neos" class="parallax-container reveal" style="background: url('images/comm.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -205,7 +204,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">payment</i></h2>
 					<h5 class="center">For good ideas and true innovation, you need human interaction, conflict, argument and debate</h5>
@@ -218,7 +217,7 @@
 			</div>
 			<!--End event 7-->
 			<!--Begin event 8 -->
-			<div id="nullptr" class="parallax-container" style="background: url('images/nullptr.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="nullptr" class="parallax-container reveal" style="background: url('images/nullptr.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -229,7 +228,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">code</i></h2>
 					<h5 class="center">Development at its best</h5>
@@ -238,7 +237,7 @@
 			</div>
 			<!--End event 8-->
 			<!--Begin event 9 -->
-			<div id="octave" class="parallax-container" style="background: url('images/octave.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="octave" class="parallax-container reveal" style="background: url('images/octave.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -249,7 +248,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">mic</i></h2>
 					<h5 class="center">Where words fail, music speaks</h5>
@@ -260,7 +259,7 @@
 			</div>
 			<!--End event 9-->
 			<!--Begin event 10 -->
-			<div id="quiddity" class="parallax-container" style="background: url('images/lit.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="quiddity" class="parallax-container reveal" style="background: url('images/lit.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -271,7 +270,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">book</i></h2>
 					<h5 class="center">Writing is a calling, not a choice.</h5>
@@ -280,7 +279,7 @@
 			</div>
 			<!--End event 10-->
 			<!--Begin event 11 -->
-			<div id="acts" class="parallax-container" style="background: url('images/drama.jpg') no-repeat center center fixed; background-size: cover;">
+			<div id="acts" class="parallax-container reveal" style="background: url('images/drama.jpg') no-repeat center center fixed; background-size: cover;">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<br><br>
@@ -291,7 +290,7 @@
 					</div>
 				</div>
 			</div>
-			<div style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
+			<div class="reveal" style="margin-top: -2%; margin-bottom: 4%; padding-left: 2%; padding-right: 2%;" id="mob">
 				<div class="icon-block" style="text-align: justify;">
 					<h2 class="center brown-text"><i class="material-icons">videocam</i></h2>
 					<h5 class="center">"I never act. I simply bring out the animal in me."</h5>
@@ -323,4 +322,5 @@
 				$(".button-collapse").sideNav();
 			});
 		</script>
+		<script src="zenscroll-min.js" charset="utf-8"></script>
 	</body>

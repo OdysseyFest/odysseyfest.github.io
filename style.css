@@ -38,3 +38,5 @@
     position:relative;
     left:555px;
 }
+
+body, .smooth-container { scroll-behavior: smooth }
